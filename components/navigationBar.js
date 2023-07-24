@@ -19,7 +19,7 @@ const NavigationBar = () => {
     <div className='fixed top-0 left-0 right-0 z-50'>
       <nav className="border-gray-200 bg-black top-0 w-full h-[10vh]">
         <div className="flex flex-wrap items-center justify-between mx-auto p-4">
-          <ScrollLink href="/" className="flex items-center">
+          <ScrollLink to="home" className="flex items-center">
             <Image
               src={Logo}
               className=" w-36 mr-3"
@@ -44,9 +44,9 @@ const NavigationBar = () => {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M1 1h15M1 7h15M1 13h15"
               />
             </svg>
@@ -59,9 +59,9 @@ const NavigationBar = () => {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
               />
             </svg>
@@ -71,6 +71,7 @@ const NavigationBar = () => {
               <li>
               <ScrollLink
                   to="home"
+                  value='home'
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -85,6 +86,7 @@ const NavigationBar = () => {
               <li>
               <ScrollLink
                   to="aboutUs"
+                  value='aboutUs'
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -99,6 +101,7 @@ const NavigationBar = () => {
               <li>
               <ScrollLink
                   to="services"
+                  value='services'
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -113,6 +116,7 @@ const NavigationBar = () => {
               <li>
               <ScrollLink
                   to="visionMission"
+                  value='visionMission'
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -128,6 +132,7 @@ const NavigationBar = () => {
               <li>
               <ScrollLink
                   to="coreValues"
+                  value='coreValues'
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -142,6 +147,7 @@ const NavigationBar = () => {
               <li>
               <ScrollLink
                   to="whyChooseUs"
+                  value='whyChooseUs'
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -156,6 +162,7 @@ const NavigationBar = () => {
               <li>
               <ScrollLink
                   to="contact"
+                  value='contact'
                   spy={true}
                   smooth={true}
                   offset={-70}
