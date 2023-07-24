@@ -37,7 +37,7 @@ const CoreValues = () => {
         {
             id: 7,
             title: 'Teamwork and Empowerment',
-            description: 'We believe that the key to success lies in the strength of our team. SAMZER Electrical fosters a collaborative and inclusive work environment, encouraging creativity and innovation from every team member. We empower our employees to excel in their roles and provide opportunities for growth and personal development.SAMZER Electrical`s dedication to excellence, innovation, and customer satisfaction has positioned us as a leading electrical services provider. Whether it`s a residential project or a complex commercial installation, we have the knowledge, experience, and passion to meet and exceed our clients electrical needs. Trust SAMZER Electrical for all your Electrical solutions, and experience the difference quality and professionalism can make.',
+            description: 'SAMZER Electrical`s dedication to excellence, innovation, and customer satisfaction has positioned us as a leading electrical services provider. Whether it`s a residential project or a complex commercial installation, we have the knowledge, experience, and passion to meet and exceed our clients electrical needs.',
             author: 'Alper Kamu',
         },
         // Add more core values here...
