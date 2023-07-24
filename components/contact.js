@@ -13,11 +13,11 @@ const ContactForm = () => {
             <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
               <div className="lg:w-1/2 px-6">
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
-                <p className="mt-1">Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter</p>
+                <p className="mt-1">Chevron drive Lekki Lagos</p>
               </div>
               <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-                <a className="text-indigo-500 leading-relaxed">example@email.com</a>
+                <a className="text-indigo-500 leading-relaxed">samzerelectrical@gmail.com</a>
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
                 <p className="leading-relaxed">08149161525</p>
               </div>
