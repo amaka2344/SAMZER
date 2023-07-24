@@ -1,15 +1,21 @@
 import '@/styles/globals.css'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Layout from '@/components/layout';
 import '../styles/styles.css'
+import Head from 'next/head';
 
 
 export default function App({ Component, pageProps }) {
   return (
-    <Layout
-    >
+    <>
+      <Head>
+        <title>SAMZER Electrical Engineering</title>
+        <link rel="icon" href='./favicon.ico' />
+        <meta name="SAMZER Electrical Engineering" />
+      </Head>
       <Component {...pageProps} />
-    </Layout>
+
+    </>
+
   )
 }
