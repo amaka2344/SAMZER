@@ -1,5 +1,4 @@
 import NavigationBar from '@/components/navigationBar'
-import { Inter } from 'next/font/google'
 import HeroSection from '@/components/hero'
 import AboutUs from '@/components/aboutUs'
 import MissionVision from '@/components/missionVision'
@@ -8,12 +7,13 @@ import Services from '@/components/services'
 import Footer from '@/components/footer'
 import WhyChooseUs from '@/components/whyChoose'
 import ContactForm from '@/components/contact'
-
-const inter = Inter({ subsets: ['latin'] })
+import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div className='scroll-smooth'>
+    <>
+  
+      <div className='scroll-smooth'>
       <NavigationBar />
       <HeroSection/>
       <AboutUs/>
@@ -24,5 +24,7 @@ export default function Home() {
       <ContactForm/>
       <Footer/>
     </div>
+    </>
+  
   )
 }
