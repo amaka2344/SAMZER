@@ -13,7 +13,6 @@ const Layout = ({ children }) => {
                     name="SAMZER Electrical Engineering" />
             </Head>
             {children}
-
         </>
     )
 }
