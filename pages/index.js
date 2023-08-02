@@ -12,7 +12,6 @@ import Head from 'next/head'
 export default function Home() {
   return (
     <>
-  
       <div className='scroll-smooth'>
       <NavigationBar />
       <HeroSection/>
@@ -25,6 +24,5 @@ export default function Home() {
       <Footer/>
     </div>
     </>
-  
   )
 }
