@@ -1,9 +1,30 @@
 // components/ContactForm.js
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import image2 from '../public/electricalservice2.jpg';
 
 const ContactForm = () => {
+  const [submissionStatus, setSubmissionStatus] = useState(null)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const form = e.target
+    const formData = new FormData(form)
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json'
+        }
+      })
+      const data = await response.json()
+      setSubmissionStatus(data.message)
+    } catch (error) {
+      setSubmissionStatus('an error occured while submitting the form')
+    }
+  }
   return (
     <div id='contact' className="py-12">
       <section className="text-gray-600 body-font relative">
@@ -27,6 +48,7 @@ const ContactForm = () => {
             <form
               action="https://formspree.io/f/xwkdvadq"
               method="POST"
+              onClick={handleSubmit}
               className="md:w-2/3 max-w-lg md:ml-20"
             >
               <h2 className="text-3xl font-semibold text-gray-500 mb-8">Contact Us</h2>
