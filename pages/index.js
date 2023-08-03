@@ -7,7 +7,6 @@ import Services from '@/components/services'
 import Footer from '@/components/footer'
 import WhyChooseUs from '@/components/whyChoose'
 import ContactForm from '@/components/contact'
-import Head from 'next/head'
 
 export default function Home() {
   return (
