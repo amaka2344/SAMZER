@@ -98,7 +98,7 @@ const ContactForm = () => {
                 Send Message
               </button>
             </form>
-
+            {submissionStatus && <p>{submissionStatus}</p>}
           </div>
         </div>
       </section>
