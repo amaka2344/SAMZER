@@ -48,6 +48,11 @@ const ContactForm = () => {
                   required
                   className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-indigo-500 text-gray-700"
                 />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
+                />
               </div>
               <div className="mb-6">
                 <label htmlFor="email" className="block text-gray-700 text-sm font-medium mb-2">
@@ -60,6 +65,11 @@ const ContactForm = () => {
                   placeholder="johndoe@example.com"
                   required
                   className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-indigo-500 text-gray-700"
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
                 />
               </div>
               <div className="mb-6">
@@ -74,9 +84,15 @@ const ContactForm = () => {
                   required
                   className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-indigo-500 text-gray-700"
                 />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
+                />
               </div>
               <button
                 type="submit"
+                disabled={state.submitting}
                 className="w-full bg-green-500 text-white py-3 rounded-lg font-medium hover:bg-green-600 transition-all duration-200"
               >
                 Send Message
