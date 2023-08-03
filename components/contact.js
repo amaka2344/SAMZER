@@ -25,7 +25,7 @@ const ContactForm = () => {
           </div>
           <div className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
             <form
-              action="https://formspree.io/f/mleydozd"
+              action="https://formspree.io/f/xwkdvadq"
               method="POST"
               className="md:w-2/3 max-w-lg md:ml-20"
             >
