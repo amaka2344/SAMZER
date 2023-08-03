@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import image2 from '../public/electricalservice2.jpg';
+import toast, { Toaster } from 'react-hot-toast'
 
 const ContactForm = () => {
   const [submissionStatus, setSubmissionStatus] = useState(null)
@@ -20,9 +21,14 @@ const ContactForm = () => {
         }
       })
       const data = await response.json()
-      setSubmissionStatus(data.message)
+      if (response.ok) {
+        setSubmissionStatus('success')
+        form.reset()
+      } else {
+        setSubmissionStatus('error')
+      }
     } catch (error) {
-      setSubmissionStatus('an error occured while submitting the form')
+      setSubmissionStatus('error')
     }
   }
   return (
@@ -98,8 +104,12 @@ const ContactForm = () => {
                 Send Message
               </button>
             </form>
-            {submissionStatus && <p>{submissionStatus}</p>}
-          </div>
+            <Toaster position="top-right" />
+
+            {submissionStatus === 'success' &&
+              toast.success('Message sent successfully!')}
+            {submissionStatus === 'error' &&
+              toast.error('An error occurred while submitting the form.')}          </div>
         </div>
       </section>
     </div>
