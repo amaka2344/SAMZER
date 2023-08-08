@@ -3,7 +3,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../styles/styles.css'
 import Head from 'next/head';
-
+import NavigationBar from '@/components/navigationBar';
+import Footer from '@/components/footer';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -22,8 +23,9 @@ export default function App({ Component, pageProps }) {
         <link rel="canonical" href="https://www.samzerelectrical.com/" />
         <meta property="og:type" content="website" />
       </Head>
+      <NavigationBar />
       <Component {...pageProps} />
-
+      <Footer />
     </>
 
   )

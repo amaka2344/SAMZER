@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import image2 from '../public/electricalservice2.jpg';
-import toast, { Toaster } from 'react-hot-toast'
 import { useForm, ValidationError } from '@formspree/react';
 
 const ContactForm = () => {
@@ -12,7 +11,12 @@ const ContactForm = () => {
   }
 
   return (
-    <div id='contact' className="py-12">
+    <div id='contact' className="py-4">
+        <div className="bg-green-500 my-[100px] text-center w-full my-custom-class">
+        <div className='p-20'>
+          <h2 className="text-white text-5xl pb-4 font-bold">Contact</h2>
+        </div>
+      </div>
       <section className="text-gray-600 body-font relative">
         <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
           <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">

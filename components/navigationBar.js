@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import {Link as ScrollLink} from 'react-scroll'
+import Link from 'next/link';
 import Logo from '../public/SAMZAR-removebg-preview.png'
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 
 const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const router = useRouter()
   const handleMenuToggle = () => {
     setIsMenuOpen((prevState) => !prevState);
   };
@@ -18,14 +19,14 @@ const NavigationBar = () => {
   return (
     <div className='fixed top-0 left-0 right-0 z-50'>
       <nav className="border-gray-200 bg-black top-0 w-full h-[10vh]">
-        <div className="flex flex-wrap items-center justify-between mx-auto p-4">
-          <ScrollLink to="home" className="flex items-center">
+        <div className="flex flex-wrap items-center justify-between mx-auto pb-4">
+          <Link href="/" className="flex items-center cursor-pointer">
             <Image
               src={Logo}
               className=" w-36 mr-3"
               alt="SAMZAR Logo"
             />
-          </ScrollLink>
+          </Link>
           <button
             data-collapse-toggle="navbar-hamburger"
             type="button"
@@ -69,110 +70,44 @@ const NavigationBar = () => {
           <div className={`${isMenuOpen ? 'block' : 'hidden'} w-full z-[1000] bg-black`} id="navbar-hamburger">
             <ul className="flex flex-col font-medium mt-4 rounded-lg">
               <li>
-              <ScrollLink
-                  to="home"
+                <Link
+                  href="/"
                   value='home'
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className="block py-2 pl-3 pr-4 text-gray-600 rounded hover:bg-gray-100"
-                  activeClass="active"
+                  className={`block py-2 pl-3 pr-4 text-gray-600 rounded hover:bg-gray-100 cursor-pointer ${router.pathname === '/' ? 'bg-green-500 text-white' : ''}`}
                   onClick={closeNavBar}
                 >
                   Home
-                </ScrollLink>
+                </Link>
               </li>
               <li>
-              <ScrollLink
-                  to="aboutUs"
+                <Link
+                  href="/about"
                   value='aboutUs'
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className="block py-2 pl-3 pr-4 text-gray-600 rounded hover:bg-gray-100"
-                  activeClass="active"
+                  className={`block py-2 pl-3 pr-4 text-gray-600 rounded hover:bg-gray-100 cursor-pointer ${router.pathname === '/about' ? 'bg-green-500 text-white' : ''}`}
                   onClick={closeNavBar}
                 >
                   About Us
-                </ScrollLink>
+                </Link>
               </li>
               <li>
-              <ScrollLink
-                  to="services"
+                <Link
+                  href="/services"
                   value='services'
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className="block py-2 pl-3 pr-4 text-gray-600 rounded hover:bg-gray-100"
-                  activeClass="active"
+                  className={`block py-2 pl-3 pr-4 text-gray-600 rounded hover:bg-gray-100 cursor-pointer ${router.pathname === '/services' ? 'bg-green-500 text-white' : ''}`}
                   onClick={closeNavBar}
                 >
                   Services
-                </ScrollLink>
+                </Link>
               </li>
               <li>
-              <ScrollLink
-                  to="visionMission"
-                  value='visionMission'
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className="block py-2 pl-3 pr-4 text-gray-600 rounded hover:bg-gray-100"
-                  activeClass="active"
-                  onClick={closeNavBar}
-                >
-                  Vision & Mission
-                </ScrollLink>
-              </li>
-            
-              <li>
-              <ScrollLink
-                  to="coreValues"
-                  value='coreValues'
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className="block py-2 pl-3 pr-4 text-gray-600 rounded hover:bg-gray-100"
-                  activeClass="active"
-                  onClick={closeNavBar}
-                >
-                  Core Values
-                </ScrollLink>
-              </li>
-              <li>
-              <ScrollLink
-                  to="whyChooseUs"
-                  value='whyChooseUs'
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className="block py-2 pl-3 pr-4 text-gray-600 rounded hover:bg-gray-100"
-                  activeClass="active"
-                  onClick={closeNavBar}
-                >
-                  Why Choose Us
-                </ScrollLink>
-              </li>
-              <li>
-              <ScrollLink
-                  to="contact"
+                <Link
+                  href="/contact"
                   value='contact'
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className="block py-2 pl-3 pr-4 text-gray-600 rounded hover:bg-gray-100"
-                  activeClass="active"
+                  className={`block py-2 pl-3 pr-4 text-gray-600 rounded hover:bg-gray-100 cursor-pointer ${router.pathname === '/contact' ? 'bg-green-500 text-white' : ''}`}
                   onClick={closeNavBar}
                 >
-                Contact
-                </ScrollLink>
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
