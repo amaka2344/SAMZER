@@ -24,7 +24,7 @@ const HeroSection = () => {
           <p className="text-lg md:text-xl text-white mb-10 text-center md:text-left">
             Top-notch electrical services for homes and businesses
           </p>
-          <Link href="#contact" className="bg-white text-black py-3 px-8 rounded-lg font-medium hover:text-[#8BC75C] hover:bg-white transition-colors duration-300">
+          <Link href="/contact" className="bg-white text-black py-3 px-8 rounded-lg font-medium hover:text-[#8BC75C] hover:bg-white transition-colors duration-300">
             Contact Us
           </Link>
         </div>
