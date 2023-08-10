@@ -13,7 +13,7 @@ const HeroSection = () => {
   }
   return (
     <div>
-      <div className=" ml-20 py-10 w-full h-[90vh] md:py-20 grid md:grid-cols-2 gap-3 items-center mx-auto px-10">
+      <div className=" pl-20 py-10 w-full h-[90vh] md:py-20 grid md:grid-cols-2 gap-3 items-center mx-auto px-10">
         <div className="container md:w-[80%] md:mr-4 flex flex-col items-center md:items-start">
           <h1 className="text-5xl md:text-[60px] font-bold text-white mb-6 text-center md:text-left">
             SAMZER Electrical Engineering
