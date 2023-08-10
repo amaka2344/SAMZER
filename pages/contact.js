@@ -12,7 +12,7 @@ const ContactForm = () => {
 
   return (
     <div id='contact' className="py-4">
-        <div className="bg-green-500 my-[100px] text-center w-full my-custom-class">
+        <div className="bg-[#22b06c] my-[100px] text-center w-full my-custom-class">
         <div className='p-20'>
           <h2 className="text-white text-5xl pb-4 font-bold">Contact</h2>
         </div>

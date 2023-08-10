@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import image3 from '../public/image4.jpeg'
+import img1 from '../public/img1.jpg'
+import img2 from '../public/img2.jpg'
+import img3 from '../public/img3.jpg'
+import img4 from '../public/evgeniy-alyoshin-2ASQyjafflo-unsplash.jpg'
+import img5 from '../public/emmanuel-ikwuegbu-xdS9XEoKBLY-unsplash.jpg'
+import img6 from '../public/electrical services.jpg'
+
 const Services = () => {
   const services = [
     { title: 'Residential Electrical Services', description: ' We offer a comprehensive range of electrical services for homeowners, including electrical installations, repairs, maintenance, lighting solutions, energy-efficient upgrades, and electrical safety inspections.' },
@@ -12,7 +19,7 @@ const Services = () => {
 
   return (
     <div>
-      <div className="bg-green-500 my-[100px] text-center w-full my-custom-class">
+      <div className="bg-[#22b06c] my-[100px] text-center w-full my-custom-class">
         <div className='p-20'>
           <h2 className="text-white text-5xl pb-4 font-bold">Services</h2>
         </div>
@@ -23,13 +30,44 @@ const Services = () => {
         </div>
         <div className="w-full md:w-1/2 mt-4 md:mt-0">
           <p className="text-gray-700 mb-4">
-          We provide a wide range of services to cater to your needs. Each of our services is designed to ensure the highest level of satisfaction and quality for our clients.
-        </p>
+            We provide a wide range of services to cater to your needs. Each of our services is designed to ensure the highest level of satisfaction and quality for our clients.
+          </p>
           {services.map((service, index) => (
             <ServiceItem key={index} title={service.title} description={service.description} />
           ))}
         </div>
       </div>
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-24 mx-auto flex flex-wrap">
+          <div className="flex w-full mb-20 flex-wrap">
+            <h1 className="sm:text-3xl text-3xl font-bold title-font text-white lg:w-1/3 lg:mb-0 mb-4">Service Gallery</h1>
+          </div>
+          <div className="flex flex-wrap md:-m-2 -m-1">
+            <div className="flex flex-wrap w-1/2">
+              <div className="md:p-2 p-1 w-1/2">
+                <Image alt="gallery" className="w-full object-cover h-full object-center block" src={img6} />
+              </div>
+              <div className="md:p-2 p-1 w-1/2">
+                <Image alt="gallery" className="w-full object-cover h-full object-center block" src={img2} />
+              </div>
+              <div className="md:p-2 p-1 w-full">
+                <Image alt="gallery" className="w-full h-full object-cover object-center block" src={img3} />
+              </div>
+            </div>
+            <div className="flex flex-wrap w-1/2">
+              <div className="md:p-2 p-1 w-full">
+                <Image alt="gallery" className="w-full h-full object-cover object-center block" src={img4} />
+              </div>
+              <div className="md:p-2 p-1 w-1/2">
+                <Image alt="gallery" className="w-full object-cover h-full object-center block" src={img5} />
+              </div>
+              <div className="md:p-2 p-1 w-1/2">
+                <Image alt="gallery" className="w-full object-cover h-full object-center block" src={img1} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
