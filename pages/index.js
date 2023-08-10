@@ -9,15 +9,15 @@ import { useForm, ValidationError } from '@formspree/react';
 const HeroSection = () => {
   const [state, handleSubmit] = useForm("xwkdvadq");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return <p>Thanks For Contacting Us!</p>;
   }
   return (
     <div>
-      <div className="py-10 w-full h-[90vh] md:py-20 grid md:grid-cols-2 gap-3 items-center mx-auto px-10">
+      <div className=" ml-20 py-10 w-full h-[90vh] md:py-20 grid md:grid-cols-2 gap-3 items-center mx-auto px-10">
         <div className="container md:w-[80%] md:mr-4 flex flex-col items-center md:items-start">
           <h1 className="text-5xl md:text-[60px] font-bold text-white mb-6 text-center md:text-left">
             SAMZER Electrical Engineering
-          </h1>
+            </h1>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center md:text-left">
             <span className='text-[#8BC75C]'>Providing Electrical Solutions for Your Needs</span>
           </h2>
