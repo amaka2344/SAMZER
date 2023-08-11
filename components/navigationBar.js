@@ -18,12 +18,12 @@ const NavigationBar = () => {
 
   return (
     <div className='fixed top-0 left-0 right-0 z-50'>
-      <nav className="border-gray-200 bg-black top-0 w-full h-[10vh]">
+      <nav className="border-gray-200 bg-black top-0 w-full h-[12vh]">
         <div className="flex flex-wrap items-center justify-between mx-auto pb-4">
           <Link href="/" className="flex items-center cursor-pointer">
             <Image
               src={Logo}
-              className=" w-36 mr-3"
+              className=" w-36 mr-4"
               alt="SAMZAR Logo"
             />
           </Link>
@@ -31,7 +31,7 @@ const NavigationBar = () => {
             data-collapse-toggle="navbar-hamburger"
             type="button"
             onClick={handleMenuToggle}
-            className="inline-flex items-center justify-center p-2 w-10 h-10 ml-3 text-sm text-white hover:text-black rounded hover:bg-white focus:outline-none"
+            className="inline-flex items-center justify-center p-2 w-10 h-10 mr-4 text-sm text-white hover:text-black rounded hover:bg-white focus:outline-none"
             aria-controls="navbar-hamburger"
             aria-expanded={isMenuOpen ? 'true' : 'false'}
           >
@@ -73,7 +73,7 @@ const NavigationBar = () => {
                 <Link
                   href="/"
                   value='home'
-                  className={`block py-2 pl-3 pr-4 text-gray-600 rounded hover:bg-gray-100 cursor-pointer ${router.pathname === '/' ? 'bg-green-500 text-white' : ''}`}
+                  className={`block py-2 pl-3 pr-4 text-gray-600 rounded hover:text-black hover:bg-gray-100 cursor-pointer ${router.pathname === '/' ? 'bg-green-500 text-white' : ''}`}
                   onClick={closeNavBar}
                 >
                   Home
@@ -83,7 +83,7 @@ const NavigationBar = () => {
                 <Link
                   href="/about"
                   value='aboutUs'
-                  className={`block py-2 pl-3 pr-4 text-gray-600 rounded hover:bg-gray-100 cursor-pointer ${router.pathname === '/about' ? 'bg-green-500 text-white' : ''}`}
+                  className={`block py-2 pl-3 pr-4 text-gray-600 rounded hover:text-black hover:bg-gray-100 cursor-pointer ${router.pathname === '/about' ? 'bg-green-500 text-white' : ''}`}
                   onClick={closeNavBar}
                 >
                   About Us
@@ -93,7 +93,7 @@ const NavigationBar = () => {
                 <Link
                   href="/services"
                   value='services'
-                  className={`block py-2 pl-3 pr-4 text-gray-600 rounded hover:bg-gray-100 cursor-pointer ${router.pathname === '/services' ? 'bg-green-500 text-white' : ''}`}
+                  className={`block py-2 pl-3 pr-4 text-gray-600 rounded hover:text-black hover:bg-gray-100 cursor-pointer ${router.pathname === '/services' ? 'bg-green-500 text-white' : ''}`}
                   onClick={closeNavBar}
                 >
                   Services
@@ -103,7 +103,7 @@ const NavigationBar = () => {
                 <Link
                   href="/contact"
                   value='contact'
-                  className={`block py-2 pl-3 pr-4 text-gray-600 rounded hover:bg-gray-100 cursor-pointer ${router.pathname === '/contact' ? 'bg-green-500 text-white' : ''}`}
+                  className={`block py-2 pl-3 pr-4 text-gray-600 rounded hover:text-black hover:bg-gray-100 cursor-pointer ${router.pathname === '/contact' ? 'bg-green-500 text-white' : ''}`}
                   onClick={closeNavBar}
                 >
                   Contact

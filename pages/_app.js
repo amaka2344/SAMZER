@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
         <meta name="description" content="SAMZER Electrical is a dynamic and innovative electrical services company that was established and registered with the Corporate Affairs Commission (CAC) in 2019. With a passion for excellence and a commitment to customer satisfaction, SAMZER Electrical has rapidly grown to become a trusted provider of electrical solutions, catering to both residential and commercial clients." />
         <meta name="keywords" content="Electricity, Power, Light, Transformer, Energy, Money, Services, Automated, Automate, Sell, Buy, Engineering, Electrictian, Samzer, Wiring, electricity, power, light, transformer, energy, money, services, automated, automate, sell, buy, engineering, electrictian, samzer, wiring" />
         <meta name="robots" content="index, follow" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <meta name="author" content="SAMZER Electrical Engineering" />
         <link rel="canonical" href="https://www.samzerelectrical.com/" />
