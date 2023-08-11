@@ -100,27 +100,17 @@ const About = () => {
                     </div>
                     <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
                         <div className="flex flex-col mb-10 lg:items-start items-center">
-                            <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-5">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                                </svg>
-                            </div>
+                          
                             <div className="flex-grow">
-                                <h2 className="text-gray-500 text-xl title-font font-bold mb-3">Our Vision</h2>
+                                <h2 className="text-white text-xl title-font font-bold mb-3">Our Vision</h2>
                                 <p className="leading-relaxed text-base text-justify">At SAMZER Electrical, our vision is to be the premier electrical services company, renowned for our commitment to excellence, innovation, and sustainable solutions. We aim to reshape the electrical industry by continuously pushing the boundaries of technology, fostering a safe and efficient environment, and empowering our clients to embrace a greener, energy-conscious future.
                                 At SAMZER Electrical, our vision statement reflects our ambition to lead the electrical industry while embodying a set of core values that guide us in every endeavor. With integrity, customer-centricity, excellence, innovation, safety, sustainability, and teamwork at our core, we are committed to providing top-tier electrical services that exceed expectations and contribute positively to the communities we serve. As we move forward, we remain dedicated to delivering on our vision and values, forging a path of progress and positive impact in the electrical services sector.</p>
                             </div>
                         </div>
                         <div className="flex flex-col mb-10 lg:items-start items-center">
-                            <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-5">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                                    <circle cx="6" cy="6" r="3"></circle>
-                                    <circle cx="6" cy="18" r="3"></circle>
-                                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                                </svg>
-                            </div>
+                            
                             <div className="flex-grow">
-                                <h2 className="text-gray-500 text-xl title-font font-bold mb-3">Our Mission</h2>
+                                <h2 className="text-white text-xl title-font font-bold mb-3">Our Mission</h2>
                                 <p className="leading-relaxed text-base text-justify">Our mission at SAMZER Electrical is to deliver top-notch electrical services, utilizing cutting-edge technology and industry best practices, while prioritizing safety and sustainability. We strive to exceed our clients' expectations by consistently providing reliable, efficient, and cost-effective solutions that enhance their lives and businesses..</p>
                             </div>
                         </div>
