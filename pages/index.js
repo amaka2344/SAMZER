@@ -12,7 +12,7 @@ const HeroSection = () => {
     return <p>Thanks For Contacting Us!</p>;
   }
   return (
-    <div>
+    <div className='bg-black'>
       <div className=" md:pl-20 py-10 w-full h-[90vh] md:py-20 grid md:grid-cols-2 gap-3 items-center mx-auto px-10">
         <div className="container md:w-[80%] md:mr-4 flex flex-col items-center md:items-start">
           <h1 className="text-5xl md:text-[60px] font-bold text-white mb-6 text-center md:text-left">

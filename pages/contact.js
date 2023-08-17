@@ -1,5 +1,5 @@
 // components/ContactForm.js
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import image2 from '../public/electricalservice2.jpg';
 import { useForm, ValidationError } from '@formspree/react';

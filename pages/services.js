@@ -82,7 +82,7 @@ const ServiceItem = ({ title, description }) => {
   return (
     <div className="group relative bg-transparent p-4 rounded-lg shadow-md transition-all duration-300 mb-4">
       <div className="flex justify-between items-center cursor-pointer" onClick={toggleOpen}>
-        <h2 className="text-xl font-semibold mb-2">{title}</h2>
+        <h2 className="text-xl font-semibold mb-2 text-white">{title}</h2>
         <div className={`transform transition-transform ${isOpen ? 'rotate-45' : ''}`}>
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
