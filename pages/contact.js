@@ -1,4 +1,5 @@
 // components/ContactForm.js
+import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import image2 from '../public/electricalservice2.jpg';
@@ -10,6 +11,8 @@ const ContactForm = () => {
     return <p>Thanks for joining!</p>;
   }
 
+  //whatsapp url with encoded message
+  const whatsappUrl = 'https://wa.me/2348149161525?text=Hello%2C%0AI%20will%20like%20to___ ' + encodeURIComponent('Hello, \nMy name is .....')
   return (
     <div id='contact' className="py-4">
         <div className="bg-[#22b06c] my-[100px] text-center w-full my-custom-class">
@@ -32,7 +35,11 @@ const ContactForm = () => {
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
                 <p className="leading-relaxed">08149161525</p>
               </div>
+              <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer" className='bg-green-500 text-white py-3 px-8 rounded-lg font-medium hover:bg-green-600 transition-colors duration-300 ml-5'>
+      Chat on WhatsApp
+    </Link>
             </div>
+     
           </div>
           <div className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
             <form
@@ -101,6 +108,7 @@ const ContactForm = () => {
               >
                 Send Message
               </button>
+            
             </form>
           </div>
         </div>
