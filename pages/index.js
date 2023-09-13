@@ -25,7 +25,7 @@ const HeroSection = () => {
     <div className='bg-black'>
       <Carousel showArrows={false} infiniteLoop={true} showThumbs={false} autoPlay={true} interval={5000}>
         <div className='hero-slide'>
-          <Image src={heroImg} alt='Hero Image 1' objectFit='cover' className='h-[1000px] w-[1000px]' />
+          <Image src={heroImg} alt='Hero Image 1' objectFit='cover' className='h-[800px] w-[800px]' />
           <div className='hero-content absolute inset-0 flex flex-col justify-center items-center px-10 text-white bg-black bg-opacity-70'>
             <h1 className='text-9xl md:text-6xl font-bold mb-6 text-center'>
               SAMZER Electrical Engineering
@@ -42,7 +42,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className='hero-slide'>
-          <Image src={image1} alt='Hero Image 2' objectFit='cover'className='h-[1000px] w-[1000px]' />
+          <Image src={image1} alt='Hero Image 2' objectFit='cover'className='h-[800px] w-[800px]' />
           <div className='hero-content absolute inset-0 flex flex-col justify-center items-center px-10 text-white bg-black bg-opacity-70'>
             <h1 className='md:text-6xl text-8xl font-bold mb-6 text-center'>
               SAMZER Electrical Engineering
@@ -58,7 +58,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className='hero-slide'>
-          <Image src={image4} alt='Hero Image 3' objectFit='cover' className='h-[1000px] w-[1000px]' />
+          <Image src={image4} alt='Hero Image 3' objectFit='cover' className='h-[800px] w-[800px]' />
           <div className='hero-content absolute inset-0 flex flex-col justify-center items-center px-10 text-white bg-black bg-opacity-70'>
             <h1 className='md:text-6xl text-8xl font-bold mb-6 text-center'>
             SAMZER Electrical Engineering
