@@ -2,10 +2,15 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import Link from 'next/link';
+import ReviewCarousel from '@/components/reviews';
 import Image from 'next/image';
 import heroImg from '../public/sam4.jpeg'
 import image3 from '../public/sam5.jpeg'
 import image2 from '../public/electricalservice2.jpg';
+import image1 from '../public/2.jpeg'
+import image4 from '../public/1.jpeg'
+import image5 from '../public/4.jpeg'
+
 import { useForm, ValidationError } from '@formspree/react';
 
 const HeroSection = () => {
@@ -18,19 +23,16 @@ const HeroSection = () => {
   const whatsappUrl = 'https://wa.me/2348149161525?text=Hello%2C%0AI%20will%20like%20to___ ' + encodeURIComponent('Hello, \nMy name is .....')
   return (
     <div className='bg-black'>
-      <Carousel showArrows={true} infiniteLoop={true} showThumbs={false} autoPlay={true} interval={5000}>
+      <Carousel showArrows={false} infiniteLoop={true} showThumbs={false} autoPlay={true} interval={5000}>
         <div className='hero-slide'>
-          <Image src={heroImg} alt='Hero Image 1' objectFit='cover' />
+          <Image src={heroImg} alt='Hero Image 1' objectFit='cover' className='h-[1000px] w-[1000px]' />
           <div className='hero-content absolute inset-0 flex flex-col justify-center items-center px-10 text-white bg-black bg-opacity-70'>
-            <h1 className='text-7xl md:text-9xl font-bold mb-6 text-center'>
+            <h1 className='text-9xl md:text-6xl font-bold mb-6 text-center'>
               SAMZER Electrical Engineering
             </h1>
-            <h2 className='text-4xl md:text-6xl font-bold mb-6 text-center text-green-500'>
-              Providing Electrical Solutions for Your Needs
+            <h2 className=' md:text-4xl text-6xl font-bold mb-6 text-center text-green-500'>
+            Our Commercial Services
             </h2>
-            <p className='text-xl md:text-2xl mb-10 text-center'>
-              Top-notch electrical services for homes and businesses
-            </p>
             <Link
               href='/contact'
               className='bg-white text-black py-3 px-8 rounded-lg font-medium hover:text-[#8BC75C] hover:bg-white transition-colors duration-300'
@@ -40,17 +42,13 @@ const HeroSection = () => {
           </div>
         </div>
         <div className='hero-slide'>
-          <Image src={heroImg} alt='Hero Image 2' objectFit='cover' />
+          <Image src={image1} alt='Hero Image 2' objectFit='cover'className='h-[1000px] w-[1000px]' />
           <div className='hero-content absolute inset-0 flex flex-col justify-center items-center px-10 text-white bg-black bg-opacity-70'>
-            <h1 className='text-7xl md:text-9xl font-bold mb-6 text-center'>
+            <h1 className='md:text-6xl text-8xl font-bold mb-6 text-center'>
               SAMZER Electrical Engineering
             </h1>
-            <h2 className='text-4xl md:text-6xl font-bold mb-6 text-center text-green-500'>
-            Providing Electrical Solutions for Your Needs
-            </h2>
-            <p className='text-xl md:text-2xl mb-10 text-center'>
-            Top-notch electrical services for homes and businesses
-            </p>
+            <h2 className='text-6xl md:text-4xl font-bold mb-6 text-center text-green-500'>
+            Our Residential Services            </h2>
             <Link
               href='/contact'
               className='bg-white text-black py-3 px-8 rounded-lg font-medium hover:text-[#8BC75C] hover:bg-white transition-colors duration-300'
@@ -60,17 +58,14 @@ const HeroSection = () => {
           </div>
         </div>
         <div className='hero-slide'>
-          <Image src={heroImg} alt='Hero Image 3' objectFit='cover' />
+          <Image src={image4} alt='Hero Image 3' objectFit='cover' className='h-[1000px] w-[1000px]' />
           <div className='hero-content absolute inset-0 flex flex-col justify-center items-center px-10 text-white bg-black bg-opacity-70'>
-            <h1 className='text-7xl md:text-9xl font-bold mb-6 text-center'>
+            <h1 className='md:text-6xl text-8xl font-bold mb-6 text-center'>
             SAMZER Electrical Engineering
             </h1>
-            <h2 className='text-4xl md:text-6xl font-bold mb-6 text-center text-green-500'>
-            Providing Electrical Solutions for Your Needs
+            <h2 className='text-6xl md:text-4xl font-bold mb-6 text-center text-green-500'>
+            Our Construction Services 
             </h2>
-            <p className='text-xl md:text-2xl mb-10 text-center'>
-            Top-notch electrical services for homes and businesses
-            </p>
             <Link
               href='/contact'
               className='bg-white text-black py-3 px-8 rounded-lg font-medium hover:text-[#8BC75C] hover:bg-white transition-colors duration-300'
@@ -97,7 +92,7 @@ const HeroSection = () => {
               <div className='w-[60px] h-[4px] rounded bg-green-300 mb-10'></div>
               {/* About Us Details */}
               <p className="leading-relaxed text-white">
-                SAMZER Electrical is a dynamic and innovative electrical services company that was established and registered with the Corporate Affairs Commission (CAC) in 2019. With a passion for excellence and a commitment to customer satisfaction, SAMZER Electrical has rapidly grown to become a trusted provider of electrical solutions, catering to both residential and commercial clients..
+                SAMZER Electrical is a dynamic and innovative electrical services company that was established and registered with the Corporate Affairs Commission (CAC) in 2021. With a passion for excellence and a commitment to customer satisfaction, SAMZER Electrical has rapidly grown to become a trusted provider of electrical solutions, catering to both residential and commercial clients..
               </p>
               <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
               </div>
@@ -149,6 +144,7 @@ const HeroSection = () => {
           </ul>
         </div>
       </div>
+      <ReviewCarousel/>
       <div id='contact' className="py-12">
         <section className="text-gray-600 body-font relative">
           <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
