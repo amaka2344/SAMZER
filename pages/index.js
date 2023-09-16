@@ -9,7 +9,7 @@ import image3 from '../public/sam5.jpeg'
 import image2 from '../public/electricalservice2.jpg';
 import image1 from '../public/2.jpeg'
 import image4 from '../public/1.jpeg'
-import image5 from '../public/4.jpeg'
+// import image5 from '../public/4.jpeg'
 
 import { useForm, ValidationError } from '@formspree/react';
 
