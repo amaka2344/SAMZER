@@ -1,0 +1,3 @@
+User-agent: googlebot-image
+Disallow:/
+Sitemap: https://samzerelectrical.com/sitemap.xml
