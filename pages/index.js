@@ -27,10 +27,10 @@ const HeroSection = () => {
         <div className='hero-slide'>
           <Image src={heroImg} alt='Hero Image 1' objectFit='cover' className='h-[500px] w-[500px]' />
           <div className='hero-content absolute inset-0 flex flex-col justify-center items-center px-10 text-white bg-black bg-opacity-70'>
-            <h1 className='text-5xl md:text-9xl font-bold mb-6 text-center'>
+            <h1 className='text-5xl md:text-7xl font-bold mb-6 text-center'>
               SAMZER Electrical Engineering
             </h1>
-            <h2 className=' md:text-6xl text-4xl font-bold mb-6 text-center text-green-500'>
+            <h2 className=' md:text-5xl text-3xl font-bold mb-6 text-center text-green-500'>
             Our Commercial Services
             </h2>
             <Link
@@ -44,10 +44,10 @@ const HeroSection = () => {
         <div className='hero-slide'>
           <Image src={image1} alt='Hero Image 2' objectFit='cover'className='h-[500px] w-[500px]' />
           <div className='hero-content absolute inset-0 flex flex-col justify-center items-center px-10 text-white bg-black bg-opacity-70'>
-            <h1 className='md:text-9xl text-5xl font-bold mb-6 text-center'>
+            <h1 className='md:text-7xl text-5xl font-bold mb-6 text-center'>
               SAMZER Electrical Engineering
             </h1>
-            <h2 className='text-4xl md:text-6xl font-bold mb-6 text-center text-green-500'>
+            <h2 className='text-3xl md:text-5xl font-bold mb-6 text-center text-green-500'>
             Our Residential Services            </h2>
             <Link
               href='/contact'
@@ -60,10 +60,10 @@ const HeroSection = () => {
         <div className='hero-slide'>
           <Image src={image4} alt='Hero Image 3' objectFit='cover' className='h-[500px] w-[500px]' />
           <div className='hero-content absolute inset-0 flex flex-col justify-center items-center px-10 text-white bg-black bg-opacity-70'>
-            <h1 className='md:text-9xl text-5xl font-bold mb-6 text-center'>
+            <h1 className='md:text-7xl text-5xl font-bold mb-6 text-center'>
             SAMZER Electrical Engineering
             </h1>
-            <h2 className='text-4xl md:text-6xl font-bold mb-6 text-center text-green-500'>
+            <h2 className='text-3xl md:text-5xl font-bold mb-6 text-center text-green-500'>
             Our Construction Services 
             </h2>
             <Link

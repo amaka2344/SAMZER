@@ -19,7 +19,7 @@ const NavigationBar = () => {
   return (
     <div className='fixed top-0 left-0 right-0 z-50'>
       <nav className="border-gray-200 bg-black top-0 w-full h-[10vh]">
-        <div className="flex flex-wrap items-center justify-between mx-auto pb-4 pt-4">
+        <div className="flex flex-wrap items-center justify-between mx-auto pb-4">
           <Link href="/" className="flex items-center cursor-pointer">
             <Image src={Logo} className=" w-36 mr-4" alt="SAMZAR Logo" />
           </Link>
